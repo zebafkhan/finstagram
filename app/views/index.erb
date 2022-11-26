@@ -1,0 +1,80 @@
+
+  <header>
+    <div class="container">
+    <h1>Zeba's Board Game Collection</h1>
+    </div>
+    </header>
+
+    <main role="main">
+        <article class="finstagram-post">
+            <div class="user-info">
+                <img src="<%= @finstagram_post_CatanKing201[:avatar_url] %>" 
+                alt="<%= @finstagram_post_CatanKing201[:username] %>">
+                <h2><%= @finstagram_post_CatanKing201[:username]%></h2>
+                <h3><%= @finstagram_post_CatanKing201[:humanized_time_ago]%></h3>
+            </div>
+                <a class="photo" href="#">
+                    <img src="<%= @finstagram_post_CatanKing201[:photo_url] %>" 
+                    alt="Post from <%= @finstagram_post_CatanKing201[:username]%> ">
+                </a>
+          <div class="actions">
+          <%= @finstagram_post_CatanKing201[:like_count]%> Likes 
+            <span class="comment-count"><%= @finstagram_post_CatanKing201[:comment_count]%></span>
+          </div>
+          <ul class="comments">
+            <li>
+                <p><%= @finstagram_post_CatanKing201[:comments][0][:username] %>: <%= @finstagram_post_CatanKing201[:comments][0][:text] %></p>
+            </li>
+          </ul>
+        </article>
+
+
+        <article class="finstagram-post">
+            <div class="user-info">
+                <img src="<%= @finstagram_post_salmon[:avatar_url] %>" 
+                alt="<%= @finstagram_post_salmon[:username] %>">
+                <h2><%= @finstagram_post_salmon[:username]%></h2>
+                <h3><%= @finstagram_post_salmon[:humanized_time_ago]%></h3>
+            </div>
+                <a class="photo" href="#">
+                    <img src="<%= @finstagram_post_salmon[:photo_url] %>" 
+                    alt="Post from <%= @finstagram_post_salmon[:username]%> ">
+                </a>
+          <div class="actions">
+          <%= @finstagram_post_salmon[:like_count]%> Likes 
+            <span class="comment-count"><%= @finstagram_post_salmon[:comment_count]%></span>
+          </div>
+          <ul class="comments">
+            <li>
+                <p><%= @finstagram_post_salmon[:comments][0][:username] %>: <%= @finstagram_post_salmon[:comments][0][:text] %></p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="finstagram-post">
+            <div class="user-info">
+                <img src="<%= @finstagram_post_crab[:avatar_url] %>" 
+                alt="<%= @finstagram_post_crab[:username] %>">
+                <h2><%= @finstagram_post_crab[:username]%></h2>
+                <h3><%= @finstagram_post_crab[:humanized_time_ago]%></h3>
+            </div>
+                <a class="photo" href="#">
+                    <img src="<%= @finstagram_post_crab[:photo_url] %>" 
+                    alt="Post from <%= @finstagram_post_crab[:username]%> ">
+                </a>
+          <div class="actions">
+          <%= @finstagram_post_crab[:like_count]%> Likes 
+            <span class="comment-count"><%= @finstagram_post_crab[:comment_count]%></span>
+          </div>
+          <ul class="comments">
+            <li>
+                <p><%= @finstagram_post_crab[:comments][0][:username] %>: <%= @finstagram_post_crab[:comments][0][:text] %></p>
+            </li>
+          </ul>
+        </article>
+
+
+    </main>
+
+ </body>
+</html>
